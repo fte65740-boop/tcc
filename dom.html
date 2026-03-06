@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício DOM Simples</title>
+</head>
+<body>
+    <p id="meu-paragrafo">Texto original</p>
+    <button id="meu-botao">Clique aqui</button>
+    <script>
+        // Seu código JavaScript aqui
+    </script>
+</body>
+</html>
+<script>
+    // Selecionar os elementos
+    const paragrafo = document.getElementById('meu-paragrafo');
+    const botao = document.getElementById('meu-botao');
+    // Adicionar um evento ao botão
+    botao.addEventListener('click', function() {
+        // Alterar o texto do parágrafo
+        paragrafo.textContent = 'Texto alterado!';
+    });
+</script>
